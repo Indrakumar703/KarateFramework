@@ -8,9 +8,9 @@ Gherkin is a human readable language created 	especially for behavior descriptio
 ```cucumber
 Feature: Brief description about test. Just for reference.
 Background:
-  # Optional section, used to define common variable across across scenarios
+  # Optional section, used to define common variable across scenarios
 
-Scenario: Brief description about test. Just for reference
+Scenario: Brief description about scenario. Just for reference
   # Scenario Steps, Input and Expected Result
   # Given Context / Input Data
   # When Event 
