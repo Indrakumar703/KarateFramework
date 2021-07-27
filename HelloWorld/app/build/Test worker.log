@@ -1,0 +1,68 @@
+16:14:21.170 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:14:22.014 request:
+1 > POST http://localhost:5000/BookStore/CreateBook
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 103
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{"Title":"Title1","BookNumber":"Book1","Category":"Cateogry1","Languauge":"English","Author":"Author1"}
+
+16:14:22.147 response time in milliseconds: 125.78
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 27 Jul 2021 20:14:21 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"title":"Title1","bookNumber":"Book1","category":"Cateogry1","language":null,"author":"Author1"}
+
+16:14:22.189 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:14:22.213 request:
+1 > GET http://localhost:5000/BookStore/RetrieveBook?bookNumber=Book1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+16:14:22.248 response time in milliseconds: 33.43
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 27 Jul 2021 20:14:21 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"title":"Title1","bookNumber":"Book1","category":"Cateogry1","language":null,"author":"Author1"}
+
+16:14:22.268 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:14:22.284 request:
+1 > PUT http://localhost:5000/BookStore/UpdateBook
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 124
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{"Title":"Title Updated","BookNumber":"Book1","Category":"Cateogry Updated","Languauge":"English","Author":"Author Updated"}
+
+16:14:22.297 response time in milliseconds: 12.12
+1 < 200
+1 < Content-Length: 0
+1 < Date: Tue, 27 Jul 2021 20:14:21 GMT
+1 < Server: Kestrel
+
+16:14:22.316 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:14:22.330 request:
+1 > DELETE http://localhost:5000/BookStore/DeleteBook?bookNumber=Book1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+16:14:22.342 response time in milliseconds: 11.73
+1 < 200
+1 < Content-Length: 0
+1 < Date: Tue, 27 Jul 2021 20:14:21 GMT
+1 < Server: Kestrel
+
+16:14:22.711 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:14:22.718 [print] Hello World!
