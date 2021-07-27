@@ -234,3 +234,6 @@ Now BookStore.feature is file ready. Please create a runner class as explained e
 
 
 
+## Conclusion
+
+I have explained basic about Karate framework and how to use gradle build to execute Karate framework. Performance testing and UI Testing are also supported by Karate.   
