@@ -31,5 +31,21 @@ Scenario: Find the tallest
   # When Find the tallest button clicked 
   # Then John is taller
 ```
-### Welcome to Karate Framework
-Only brefied about Gherking langauage, Learn more about Gherkin langauge in [Gherkin Language](https://docs.behat.org/en/v2.5/guides/1.gherkin.html) 
+### Hello World!
+Only brefied about Gherking langauage, Learn more about Gherkin langauge in [Gherkin Language](https://docs.behat.org/en/v2.5/guides/1.gherkin.html). Like learning any another language, we start with "Hello World!" program.  
+
+```cucumber
+Feature: Hello World!
+
+Scenario: Hello World!
+  * print "Hello World!"
+```
+ 
+Save the above content to "Welcome.feature" file in a temporary directory. 
+### Environment
+Now our first feature is ready, but how to run this feature file using Karate framwork. It can be done different ways: Maven, Gradle and Standalone. We will be using Gradle in this article.
+#### Tools Required
+
+* [JDK](https://www.oracle.com/ca-en/java/technologies/javase-jdk11-downloads.html)
+* [Gradle](https://gradle.org/install/)
+
