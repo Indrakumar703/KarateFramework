@@ -138,7 +138,7 @@ Note: Used dotnet core to create this API, please feel free to use otherwise cre
 </tr>
 <tr>
   <td>Update/Put</td>
-  <td>http://localhost:5000/BookStore/CreateBook</td>
+  <td>http://localhost:5000/BookStore/UpdateBook</td>
   <td><pre>
   json
   {
