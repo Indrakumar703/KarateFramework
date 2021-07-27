@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BookStore.BookStoreTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-07-27T20:14:20" hostname="HOMELAPTOP" time="1.732">
+  <properties/>
+  <testcase name="[1:7] Create Book" classname="BookStore.BookStoreTest" time="1.256"/>
+  <testcase name="[2:24] Retrieve Book" classname="BookStore.BookStoreTest" time="0.079"/>
+  <testcase name="[3:31] Update Book" classname="BookStore.BookStoreTest" time="0.049"/>
+  <testcase name="[4:48] Delete Book" classname="BookStore.BookStoreTest" time="0.34"/>
+  <system-out><![CDATA[16:14:21.162 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:14:21.358 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+16:14:21.369 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+16:14:21.376 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+16:14:21.984 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+16:14:22.007 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:14:22.013 [Test worker] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5000/BookStore/CreateBook
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 103
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{"Title":"Title1","BookNumber":"Book1","Category":"Cateogry1","Languauge":"English","Author":"Author1"}
+
+16:14:22.018 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:5000][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+16:14:22.061 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:5000][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+16:14:22.066 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:5000
+16:14:22.077 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:5000
+16:14:22.082 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:60211<->127.0.0.1:5000
+16:14:22.083 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
+16:14:22.084 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /BookStore/CreateBook HTTP/1.1
+16:14:22.084 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+16:14:22.086 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+16:14:22.091 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /BookStore/CreateBook HTTP/1.1
+16:14:22.092 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: application/json; charset=UTF-8
+16:14:22.094 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 103
+16:14:22.095 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: localhost:5000
+16:14:22.095 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+16:14:22.096 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+16:14:22.097 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+16:14:22.098 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /BookStore/CreateBook HTTP/1.1[\r][\n]"
+16:14:22.098 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+16:14:22.099 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 103[\r][\n]"
+16:14:22.099 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: localhost:5000[\r][\n]"
+16:14:22.105 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+16:14:22.106 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)[\r][\n]"
+16:14:22.107 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:14:22.108 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+16:14:22.109 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "{"Title":"Title1","BookNumber":"Book1","Category":"Cateogry1","Languauge":"English","Author":"Author1"}"
+16:14:22.121 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+16:14:22.122 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Tue, 27 Jul 2021 20:14:21 GMT[\r][\n]"
+16:14:22.122 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:14:22.122 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: Kestrel[\r][\n]"
+16:14:22.122 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+16:14:22.122 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+16:14:22.122 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "61[\r][\n]"
+16:14:22.123 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{"title":"Title1","bookNumber":"Book1","category":"Cateogry1","language":null,"author":"Author1"}[\r][\n]"
+16:14:22.128 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+16:14:22.128 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Tue, 27 Jul 2021 20:14:21 GMT
+16:14:22.128 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+16:14:22.129 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Server: Kestrel
+16:14:22.129 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+16:14:22.136 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+16:14:22.145 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+16:14:22.145 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+16:14:22.146 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://localhost:5000] can be kept alive indefinitely
+16:14:22.146 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+16:14:22.146 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:5000][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+16:14:22.147 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 125.78
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 27 Jul 2021 20:14:21 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"title":"Title1","bookNumber":"Book1","category":"Cateogry1","language":null,"author":"Author1"}
+
+16:14:22.188 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:14:22.190 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+16:14:22.191 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+16:14:22.212 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+16:14:22.212 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:14:22.212 [Test worker] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/BookStore/RetrieveBook?bookNumber=Book1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+16:14:22.213 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:5000][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+16:14:22.215 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->http://localhost:5000][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+16:14:22.215 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:5000
+16:14:22.216 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:5000
+16:14:22.217 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:60212<->127.0.0.1:5000
+16:14:22.219 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 30000
+16:14:22.219 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /BookStore/RetrieveBook?bookNumber=Book1 HTTP/1.1
+16:14:22.219 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+16:14:22.220 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+16:14:22.221 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 >> GET /BookStore/RetrieveBook?bookNumber=Book1 HTTP/1.1
+16:14:22.221 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 >> Host: localhost:5000
+16:14:22.221 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
+16:14:22.221 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+16:14:22.224 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+16:14:22.224 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 >> "GET /BookStore/RetrieveBook?bookNumber=Book1 HTTP/1.1[\r][\n]"
+16:14:22.224 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 >> "Host: localhost:5000[\r][\n]"
+16:14:22.224 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+16:14:22.231 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)[\r][\n]"
+16:14:22.231 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:14:22.231 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
+16:14:22.244 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+16:14:22.244 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Date: Tue, 27 Jul 2021 20:14:21 GMT[\r][\n]"
+16:14:22.244 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+16:14:22.245 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Server: Kestrel[\r][\n]"
+16:14:22.245 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+16:14:22.245 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+16:14:22.245 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "61[\r][\n]"
+16:14:22.245 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "{"title":"Title1","bookNumber":"Book1","category":"Cateogry1","language":null,"author":"Author1"}[\r][\n]"
+16:14:22.245 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << HTTP/1.1 200 OK
+16:14:22.246 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Date: Tue, 27 Jul 2021 20:14:21 GMT
+16:14:22.246 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Type: application/json; charset=utf-8
+16:14:22.246 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Server: Kestrel
+16:14:22.246 [Test worker] DEBUG org.apache.http.headers - http-outgoing-1 << Transfer-Encoding: chunked
+16:14:22.246 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+16:14:22.247 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "0[\r][\n]"
+16:14:22.247 [Test worker] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+16:14:22.247 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 1][route: {}->http://localhost:5000] can be kept alive indefinitely
+16:14:22.247 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 0
+16:14:22.247 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}->http://localhost:5000][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+16:14:22.247 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 33.43
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 27 Jul 2021 20:14:21 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"title":"Title1","bookNumber":"Book1","category":"Cateogry1","language":null,"author":"Author1"}
+
+16:14:22.268 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:14:22.269 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+16:14:22.270 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+16:14:22.271 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+16:14:22.283 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+16:14:22.283 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:14:22.284 [Test worker] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:5000/BookStore/UpdateBook
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 124
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+{"Title":"Title Updated","BookNumber":"Book1","Category":"Cateogry Updated","Languauge":"English","Author":"Author Updated"}
+
+16:14:22.285 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:5000][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+16:14:22.285 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {}->http://localhost:5000][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+16:14:22.285 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:5000
+16:14:22.286 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:5000
+16:14:22.287 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:60213<->127.0.0.1:5000
+16:14:22.287 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: set socket timeout to 30000
+16:14:22.287 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request PUT /BookStore/UpdateBook HTTP/1.1
+16:14:22.287 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+16:14:22.287 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+16:14:22.288 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 >> PUT /BookStore/UpdateBook HTTP/1.1
+16:14:22.288 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 >> Content-Type: application/json; charset=UTF-8
+16:14:22.288 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 >> Content-Length: 124
+16:14:22.288 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 >> Host: localhost:5000
+16:14:22.288 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 >> Connection: Keep-Alive
+16:14:22.288 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 >> User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+16:14:22.288 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 >> Accept-Encoding: gzip,deflate
+16:14:22.289 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 >> "PUT /BookStore/UpdateBook HTTP/1.1[\r][\n]"
+16:14:22.289 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+16:14:22.289 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 >> "Content-Length: 124[\r][\n]"
+16:14:22.289 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 >> "Host: localhost:5000[\r][\n]"
+16:14:22.289 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+16:14:22.289 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)[\r][\n]"
+16:14:22.289 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:14:22.289 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 >> "[\r][\n]"
+16:14:22.289 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 >> "{"Title":"Title Updated","BookNumber":"Book1","Category":"Cateogry Updated","Languauge":"English","Author":"Author Updated"}"
+16:14:22.293 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 << "HTTP/1.1 200 OK[\r][\n]"
+16:14:22.293 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 << "Date: Tue, 27 Jul 2021 20:14:21 GMT[\r][\n]"
+16:14:22.294 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 << "Server: Kestrel[\r][\n]"
+16:14:22.294 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 << "Content-Length: 0[\r][\n]"
+16:14:22.294 [Test worker] DEBUG org.apache.http.wire - http-outgoing-2 << "[\r][\n]"
+16:14:22.294 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 << HTTP/1.1 200 OK
+16:14:22.294 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 << Date: Tue, 27 Jul 2021 20:14:21 GMT
+16:14:22.294 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 << Server: Kestrel
+16:14:22.294 [Test worker] DEBUG org.apache.http.headers - http-outgoing-2 << Content-Length: 0
+16:14:22.296 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+16:14:22.296 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 2][route: {}->http://localhost:5000] can be kept alive indefinitely
+16:14:22.296 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: set socket timeout to 0
+16:14:22.296 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 2][route: {}->http://localhost:5000][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+16:14:22.297 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 12.12
+1 < 200
+1 < Content-Length: 0
+1 < Date: Tue, 27 Jul 2021 20:14:21 GMT
+1 < Server: Kestrel
+
+16:14:22.316 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:14:22.318 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+16:14:22.319 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+16:14:22.329 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+16:14:22.329 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:14:22.329 [Test worker] DEBUG com.intuit.karate - request:
+1 > DELETE http://localhost:5000/BookStore/DeleteBook?bookNumber=Book1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+
+16:14:22.330 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:5000][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+16:14:22.331 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->http://localhost:5000][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+16:14:22.331 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://localhost:5000
+16:14:22.331 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:5000
+16:14:22.333 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:60214<->127.0.0.1:5000
+16:14:22.334 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 30000
+16:14:22.334 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request DELETE /BookStore/DeleteBook?bookNumber=Book1 HTTP/1.1
+16:14:22.334 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+16:14:22.334 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+16:14:22.334 [Test worker] DEBUG org.apache.http.headers - http-outgoing-3 >> DELETE /BookStore/DeleteBook?bookNumber=Book1 HTTP/1.1
+16:14:22.334 [Test worker] DEBUG org.apache.http.headers - http-outgoing-3 >> Host: localhost:5000
+16:14:22.334 [Test worker] DEBUG org.apache.http.headers - http-outgoing-3 >> Connection: Keep-Alive
+16:14:22.334 [Test worker] DEBUG org.apache.http.headers - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)
+16:14:22.334 [Test worker] DEBUG org.apache.http.headers - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+16:14:22.334 [Test worker] DEBUG org.apache.http.wire - http-outgoing-3 >> "DELETE /BookStore/DeleteBook?bookNumber=Book1 HTTP/1.1[\r][\n]"
+16:14:22.335 [Test worker] DEBUG org.apache.http.wire - http-outgoing-3 >> "Host: localhost:5000[\r][\n]"
+16:14:22.336 [Test worker] DEBUG org.apache.http.wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+16:14:22.336 [Test worker] DEBUG org.apache.http.wire - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.12)[\r][\n]"
+16:14:22.336 [Test worker] DEBUG org.apache.http.wire - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:14:22.336 [Test worker] DEBUG org.apache.http.wire - http-outgoing-3 >> "[\r][\n]"
+16:14:22.340 [Test worker] DEBUG org.apache.http.wire - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+16:14:22.341 [Test worker] DEBUG org.apache.http.wire - http-outgoing-3 << "Date: Tue, 27 Jul 2021 20:14:21 GMT[\r][\n]"
+16:14:22.341 [Test worker] DEBUG org.apache.http.wire - http-outgoing-3 << "Server: Kestrel[\r][\n]"
+16:14:22.341 [Test worker] DEBUG org.apache.http.wire - http-outgoing-3 << "Content-Length: 0[\r][\n]"
+16:14:22.341 [Test worker] DEBUG org.apache.http.wire - http-outgoing-3 << "[\r][\n]"
+16:14:22.341 [Test worker] DEBUG org.apache.http.headers - http-outgoing-3 << HTTP/1.1 200 OK
+16:14:22.341 [Test worker] DEBUG org.apache.http.headers - http-outgoing-3 << Date: Tue, 27 Jul 2021 20:14:21 GMT
+16:14:22.341 [Test worker] DEBUG org.apache.http.headers - http-outgoing-3 << Server: Kestrel
+16:14:22.341 [Test worker] DEBUG org.apache.http.headers - http-outgoing-3 << Content-Length: 0
+16:14:22.341 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+16:14:22.342 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 3][route: {}->http://localhost:5000] can be kept alive indefinitely
+16:14:22.342 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 0
+16:14:22.342 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->http://localhost:5000][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+16:14:22.342 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 11.73
+1 < 200
+1 < Content-Length: 0
+1 < Date: Tue, 27 Jul 2021 20:14:21 GMT
+1 < Server: Kestrel
+
+---------------------------------------------------------
+feature: classpath:BookStore/BookStore.feature
+scenarios:  4 | passed:  4 | failed:  0 | time: 1.0559
+---------------------------------------------------------
+]]></system-out>
+  <system-err><![CDATA[Warning: Nashorn engine is planned to be removed from a future JDK release
+]]></system-err>
+</testsuite>
