@@ -174,7 +174,7 @@ Scenario: Create Book
     {
         "Title" : "Title1",
         "BookNumber" : "Book1",
-        "Category" : "Cateogry1",
+        "Category" : "Category1",
         "Language" : "English",
         "Author" : "Author1"
     }
