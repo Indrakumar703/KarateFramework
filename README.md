@@ -21,14 +21,14 @@ Scenario: Another scenario
   # When Event 
   # Then Expected Result
 ```
-Let create a feature to test find the tallest among two persons: 
+Let's create a feature to test find the tallest among two persons: 
 
 ```cucumber
 Feature: Find the tallest
 
 Scenario: Find the tallest
   # Given John height is 5 ft and Peter height is 6 ft
-  # When Find the tallest button clicked 
+  # When "Find the tallest" button clicked 
   # Then John is taller
 ```
 
@@ -68,7 +68,7 @@ Please add the following in the "HelloWorld\app\build.gradle" file
     testImplementation 'com.intuit.karate:karate-junit5:0.9.6'
 ```
 
-* Update test resource path, so feature file and java file ( test runner file ) can be placed in the same path. 
+* Update the test resource path, so feature file and java file ( test runner file ) can be placed in the same path. 
 ```groovy
 sourceSets {
     test {
@@ -81,12 +81,12 @@ sourceSets {
 ```
 
 Please update the following in the HelloWorld\app\src\test\java\HelloWorld\AppTest.java
-* Import Karate classes
+* Import the Karate class
 ```java
 import com.intuit.karate.junit5.Karate;
 ```
 
-* Add Runner method
+* Add a runner method
 ```java
     @Karate.Test
     Karate HelloWorld() {
@@ -104,9 +104,7 @@ Build is completed, test case/ features are tested and also fancy report is gene
 
 ### API Testing
 
-Created BookStore API with following CRUD operation: 
-
-Note: Used dotnet core to create this API, please feel free to use otherwise create your own.
+Let's start testing the BookStore API. This API supports the following CRUD operation: 
 
 <table>
 <tr>
@@ -157,9 +155,14 @@ Note: Used dotnet core to create this API, please feel free to use otherwise cre
   <td>BookNumber</td>
   <td>200</td>
 </tr>
+<tr>
+  <td colspan=4>
+    Note: Created dotnet web api and available in Bookstore folder
+  </td>
+</tr>
 </table>
 
-* Let us create a feature to test this API. Begin with Create Book scenario
+* Let's create a feature to test this API. Begin with Create Book scenario
 
 ```cucumber
 Feature: Test Book Store
@@ -186,7 +189,24 @@ Scenario: Create Book
     Then status 200
 ```
 
-URL is common  across scenarios, so it is defined in the "Background" section. Input request is defined in "model" variable and offset given the "path". Additional offset can be added "Add" command.
+<table>
+  <tr>
+    <td>Given path 'CreateBook'</td>
+    <td>URL Offset, more path can be added using "add" command</tr>
+  </tr>
+  <tr>
+    <td>And request model</td>
+    <td>This is input value passed during post.</tr>
+  </tr>
+  <tr>
+    <td>When method post</td>
+    <td>Http action method</tr>
+  </tr>
+  <tr>
+    <td>Then status 200</td>
+    <td>Expected result.</tr>
+  </tr>
+</table>
 
 * Continue with Retreive scenario:
 
