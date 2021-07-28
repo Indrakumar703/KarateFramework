@@ -122,7 +122,7 @@ Let's start testing the BookStore API. This API supports the following CRUD oper
     "Title" : "Title1",
     "BookNumber" : "Book1",
     "Category" : "Cateogry1",
-    "Languauge" : "English",
+    "Language" : "English",
     "Author" : "Author1"
   }    
   </pre></td>
@@ -142,8 +142,8 @@ Let's start testing the BookStore API. This API supports the following CRUD oper
   {
     "Title" : "Title Updated",
     "BookNumber" : "Book1",
-    "Category" : "Cateogry Updated",
-    "Languauge" : "English",
+    "Category" : "Category Updated",
+    "Language" : "English",
     "Author" : "Author Updated"
   }    
   </pre></td>
@@ -208,7 +208,7 @@ Scenario: Create Book
   </tr>
 </table>
 
-* Continue with Retreive scenario:
+* Continue with retrieve  scenario:
 
 ```cucumber
   Scenario: Retrieve Book
@@ -219,7 +219,7 @@ Scenario: Create Book
     Then status 200
 ```
 
-* Continue with Update Scenario:
+* Continue with update Scenario:
 ```cucumber
   Scenario: Update Book
     * def model = 
@@ -228,7 +228,7 @@ Scenario: Create Book
         "Title" : "Title Updated",
         "BookNumber" : "Book1",
         "Category" : "Category Updated",
-        "Languauge" : "English",
+        "Language" : "English",
         "Author" : "Author Updated"
     }
     """
