@@ -1,6 +1,14 @@
 # API Testing using Karate Framework
 ## What is Karate Framework?
-Karate is open source tool which is used to test API. Even UI testing can be done using Karate framework.  Karate framework is an extension of Cucumber frameworks, obviously follows the behavior-driven development (BDD) and test cases written in Gherkin.
+<table border="0">
+  <tr>
+    <td><img src="Resources/karate-logo.jpg"  alt="1" width = 100px height = 100px ></td>
+    <td>
+      Karate is open source tool which is used to test API. Even UI testing can be done using Karate framework.  Karate framework is an extension of Cucumber frameworks, obviously follows the behavior-driven development (BDD) and test cases written in Gherkin.
+    </td>
+  </tr>
+ </table>
+ 
 ## About Gherkin
 Gherkin is a human readable language created 	especially for behavior descriptions. Gherkin is a line oriented language; each statement is separated by new line.
 
