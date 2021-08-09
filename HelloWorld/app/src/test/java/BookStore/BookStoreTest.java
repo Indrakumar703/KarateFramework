@@ -8,7 +8,7 @@ import com.intuit.karate.junit5.Karate;
 class BookStoreTest {
 
     @Karate.Test
-    Karate HelloWorld() {
+    Karate BookStoreTestCRUD() {
         return Karate.run("BookStore").relativeTo(getClass());
     }
 
