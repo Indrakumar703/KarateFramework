@@ -264,6 +264,13 @@ Create a free style job with following configuration
 
 ![Jenkins Job Creation](Resources/jenkinsJob.gif)
 
+### Build
+
+Job is ready, first trigger the build without applying “**HelloWorld**” filter. Book store API is not running, so all test cases related to book store api are failed.  Now apply “**HelloWorld**” filter in the job configuration and trigger another build.  Now only HelloWorld test case is executed and build is success.
+
+![Jenkins Job Result](Resources/testResult.gif)
+
+
 ## Conclusion
 
 I have explained basic about Karate framework and how to use gradle build to execute Karate framework. Performance testing and UI Testing are also supported by Karate.   
