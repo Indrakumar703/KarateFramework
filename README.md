@@ -259,8 +259,8 @@ Now BookStore.feature is file ready. Please create a runner class as explained e
 
 Create a free style job with following configuration
 * Git Repository URL: https://github.com/Indrakumar703/KarateFramework.git
-* Build Gradle Task: clean test --tests "**HelloWorld**"
-* JUnit Report Path HelloWorld/app/build/test-results/test/*.xml 
+* Build Gradle Task: clean test --tests. If you like run only HelloWorld, please add "**HelloWorld**". 
+* JUnit Report Path: HelloWorld/app/build/test-results/test/*.xml 
 
 ![Jenkins Job Creation](Resources/jenkinsJob.gif)
 
