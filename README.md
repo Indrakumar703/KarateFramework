@@ -253,6 +253,16 @@ Now BookStore.feature is file ready. Please create a runner class as explained e
 ![Alt text](Resources/bookstore.gif)
 
 
+## Jenkins Integration
+
+### Job Creation
+
+Create a free style job with following configuration
+* Git Repository URL: https://github.com/Indrakumar703/KarateFramework.git
+* Build Gradle Task: clean test --tests "**HelloWorld**"
+* JUnit Report Path HelloWorld/app/build/test-results/test/*.xml 
+
+![Jenkins Job Creation](Resources/jenkinsJob.gif)
 
 ## Conclusion
 
